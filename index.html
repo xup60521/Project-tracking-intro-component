@@ -11,19 +11,40 @@
 
 <body class="font-body bg-white">
     <!-- md:px-[5vw] -->
-    <main class="w-full pb-24 md:px-[10vw] px-8 min-h-screen flex flex-col items-center overflow-x-hidden relative z-10">
+    <main
+        class="w-full pb-24 md:px-[10vw] px-8 min-h-screen flex flex-col items-center overflow-x-hidden relative z-10">
         <div class="w-[50vw] md:h-[30vw] h-[25rem] absolute right-0 top-0 bg-c_Light_Grayish_Blue rounded-bl-[3rem]">
         </div>
         <nav class="flex items-center w-full md:py-12 py-8 font-other gap-12 text-sm z-10">
             <img src="/images/logo.svg" alt="logo" class="md:h-auto h-6" />
             <div class="flex-grow"></div>
-            <button class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Product</button>
-            <button class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Features</button>
-            <button class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Pricing</button>
+            <button
+                class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Product</button>
+            <button
+                class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Features</button>
+            <button
+                class="text-c_Very_Dark_Blue md:block hidden font-bold hover:text-black hover:underline uppercase">Pricing</button>
             <span class="font-bold md:block hidden text-c_Grayish_Blue">‧</span>
-            <button class="text-c_Very_Dark_Blue md:block hidden hover:text-black hover:underline uppercase">Login</button>
-            <img src="/images/icon-hamburger.svg" alt="menu icon" role="button" class="md:hidden" />
+            <button
+                class="text-c_Very_Dark_Blue md:block hidden hover:text-black hover:underline uppercase">Login</button>
+            <img id="btn" src="/images/icon-hamburger.svg" alt="menu icon" role="button" class="md:hidden" />
         </nav>
+        <!-- mobile nav menu -->
+        <div id="menu" style="height: 0;" class="md:hidden overflow-hidden w-[90vw] absolute top-20 z-20 bg-white rounded shadow-[0_3px_10px_rgb(0,0,0,0.2)] font-other tracking-wider">
+            <div class="w-full flex flex-col items-center py-4 gap-4 text-lg">
+                <button
+                class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Product</button>
+                <button
+                class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Features</button>
+                <button
+                class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Pricing</button>
+                <div class="w-[90%] border-t-[1px] border-c_Light_Grayish_Blue">
+
+                </div>
+                <button
+                class="font-bold text-c_Grayish_Blue hover:underline uppercase">Login</button>
+            </div>
+        </div>
         <!-- main section -->
         <section class="md:grid flex flex-col-reverse grid-cols-2 w-full items-center md:py-[10vh] z-10">
             <!-- left -->
@@ -36,14 +57,16 @@
                 <h1
                     class="font-other md:text-[3.5rem] text-[2.5rem] leading-[2.5rem] pt-4 pb-6 md:leading-[3.5rem] md:max-w-[30rem] uppercase font-bold">
                     Powerful insights into your team</h1>
-                <p class="text-c_Dark_Grayish_Blue md:max-w-[15rem] pr-16">Project planning and time tracking for agile teams
+                <p class="text-c_Dark_Grayish_Blue md:max-w-[15rem] pr-16">Project planning and time tracking for agile
+                    teams
                 </p>
                 <div class="md:h-16 h-6"></div>
                 <div class="flex items-center gap-6 md:text-sm text-xs">
                     <button
                         class="bg-c_Red hover:bg-opacity-75 transition uppercase text-white font-other px-6 py-2 rounded font-bold">Schedule
                         a demo</button>
-                    <span class="font-other tracking-[0.15rem] md:tracking-[0.2rem] text-c_Grayish_Blue uppercase">to see a live
+                    <span class="font-other tracking-[0.15rem] md:tracking-[0.2rem] text-c_Grayish_Blue uppercase">to
+                        see a live
                         preview</span>
                 </div>
             </div>
