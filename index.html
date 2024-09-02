@@ -9,12 +9,47 @@
     <link rel="stylesheet" href="./src/style.css">
 </head>
 
-<body>
-    <main
-        class="w-full min-h-screen bg-gradient-to-r from-fuchsia-500 to-cyan-500 flex items-center justify-center">
-        <h1 class="font-mono font-bold text-3xl text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
-            Vite + Typescript + TailwindCSS + GitHub Pages
-        </h1>
+<body class="font-body bg-white">
+    <!-- md:px-[5vw] -->
+    <main class="w-full md:px-[10vw] min-h-screen flex flex-col items-center overflow-x-hidden relative z-10">
+        <div class="w-[50vw] h-[30vw] absolute right-0 top-0 bg-c_Light_Grayish_Blue rounded-bl-[3rem]">
+        </div>
+        <nav class="flex items-center w-full py-12 font-other gap-12 text-sm z-10">
+            <img src="/images/logo.svg" alt="logo" />
+            <div class="flex-grow"></div>
+            <button class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Product</button>
+            <button class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Features</button>
+            <button class="text-c_Very_Dark_Blue font-bold hover:text-black hover:underline uppercase">Pricing</button>
+            <span class="font-bold text-c_Grayish_Blue">‧</span>
+            <button class="text-c_Very_Dark_Blue hover:text-black hover:underline uppercase">Login</button>
+        </nav>
+        <!-- main section -->
+        <section class="grid grid-cols-2 w-full items-center md:py-[10vh]">
+            <!-- left -->
+            <div class="flex flex-col">
+                <div class="flex items-center gap-2">
+                    <span
+                        class="text-white bg-c_Very_Dark_Blue uppercase px-2 font-other rounded-full text-sm font-bold">NEW</span>
+                    <span class="uppercase font-other text-c_Grayish_Blue tracking-[0.25rem]">Monograph Dashboard</span>
+                </div>
+                <h1
+                    class="font-other md:text-[3.5rem] md:pt-4 md:pb-6 md:leading-[3.5rem] md:max-w-[30rem] uppercase font-bold">
+                    Powerful insights into your team</h1>
+                <p class="text-c_Dark_Grayish_Blue md:max-w-[15rem]">Project planning and time tracking for agile teams
+                </p>
+                <div class="md:h-16"></div>
+                <div class="flex items-center gap-6 text-sm">
+                    <button
+                        class="bg-c_Red hover:bg-opacity-75 transition text-white font-other px-6 py-2 rounded-md font-bold">Schedule
+                        a demo</button>
+                    <span class="font-other tracking-[0.2rem] text-c_Grayish_Blue uppercase">to see a live
+                        preview</span>
+                </div>
+            </div>
+            <!-- right -->
+            <img src="/images/illustration-devices.svg" alt=""
+                class="absolute md:h-[68vh] h-auto aspect-[960/464] md:top-[10rem] -right-[20vw]" />
+        </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
 </body>
